@@ -2,8 +2,6 @@ var net = require("net");
 //var pdfcrowd = require("pdfcrowd");
 var sockets = [];
 const mongoose = require("mongoose");
-// const url = "mongodb://jsidfjrestaurantjfosjfa:iQmzRVjoaIljSNEDnwRncAo0@45.140.185.103:25636/restaurantdb";
-const url ="mongodb://0.0.0.0:27017/rstaurant_database?directConnection=true";
 const Order = require("./models/Order");
 var http = require('http')
 const Tables = require("./models/Table");
@@ -30,9 +28,7 @@ db.on("open", () => {
   console.log("database connected");
 });
 var erpnext = new ERPNext({
-  username: "mazhar.dars@sowaan.com",
-  password: "SowaanERP",
-  baseUrl: "https://lpt.sowaanerp.com",
+  
 });
 
 
