@@ -6,12 +6,12 @@ const tableSchema = new mongoose.Schema({
         type: 'String',
         required: [true, 'ERP ID required']
     },
-    table_num:{
-        type: String,
-        required:[true,'Table Number required']
+    table_num: {
+        type: 'String',
+        required: [true,'Table Number required']
     },
     occupied: {
-        type:Number,
+        type: 'Number',
         default: 0
     }
 

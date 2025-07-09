@@ -2,97 +2,97 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema
 
 const orderSchema = new mongoose.Schema({
-    Business_date_id:{
-        type:Number,
-        required:[true,'Business Id is required']
+    Business_date_id: {
+        type: Number,
+        required: [true, 'Business Id is required']
     },
-    table_num:{
-        type:String
+    table_num: {
+        type: String
     },
-    pos_profile:{
-        type:String
+    pos_profile: {
+        type: String
     },
     high_priority: {
         type: Boolean,
-        default:false
+        default: false
     },
     coming_order_ip: {
-        type:String
+        type: String
     },
-    company:{
-        type:String
+    company: {
+        type: String
     },
-    due_date:{
-        type:Date,
+    due_date: {
+        type: Date,
     },
-    total_quantity:{
-        type:Number
+    total_quantity: {
+        type: Number
     },
-    total_billing_amount:{
-        type:Number
+    total_billing_amount: {
+        type: Number
     },
-    base_net_total:{
-        type:Number
+    base_net_total: {
+        type: Number
     },
-    total:{
-        type:Number
+    total: {
+        type: Number
     },
-    net_total:{
-        type:Number
+    net_total: {
+        type: Number
     },
-    sale_invoice_status:{
-        type:String
+    sale_invoice_status: {
+        type: String
     },
-    sale_invoice_type:{
-        type:String
+    sale_invoice_type: {
+        type: String
     },
-    sale_invoice_json_string:{
-        type:String
+    sale_invoice_json_string: {
+        type: String
     },
-    order_priority:{
-        type:Boolean
+    order_priority: {
+        type: Boolean
     },
     customer_name: {
-      type:String   
+        type: String
     },
-    order_creation_time:{
-        type:Date,
+    order_creation_time: {
+        type: Date,
     },
-    order_modified_time:{
-        type:Date
+    order_modified_time: {
+        type: Date
     },
     data_sync: {
         type: Boolean,
-        default:false
+        default: false
     },
-    sale_invoice_status:{
-        type:String
+    sale_invoice_status: {
+        type: String
     },
-    cancel_reason:{
-        type:String
+    cancel_reason: {
+        type: String
     },
     taxes: {
-        type:String
+        type: String
     },
     sale_invoice_data: {
-        type:String
+        type: String
     },
     sale_type: {
         type: Boolean, //false = Sale Invoice true Sale Orders
-        default:false
+        default: false
     },
     is_paid: {
         type: Boolean,
-        default:false
+        default: false
     },
     sale_invoice_name: {
-        type:String
+        type: String
     },
     sale_order_name: {
-        type:String
+        type: String
     },
-    sale_invoice_json_string:{
-        type:String
+    sale_invoice_json_string: {
+        type: String
     }
 });
 
